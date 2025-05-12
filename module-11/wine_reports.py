@@ -33,9 +33,9 @@ def run_and_show(cur, title: str, sql: str):
     rows = cur.fetchall()
     headers = [d[0] for d in cur.description]
 
-    print("\n" + "=" * 80)
-    print(f"{title.center(80)}")
-    print("=" * 80)
+    print("\n" + "=" * 60)
+    print(f"{title.center(60)}")
+    print("=" * 60)
     print(
         tabulate(
             rows,
